@@ -337,16 +337,17 @@ Wait until all processes complete before calculating turnaround and waiting time
 After completing the lab, answer these questions:
 
 1. Compare the results with time quantum 3 and time quantum 5. Which quantum gave better average waiting time? Why?
-
+- The 5 ms quantum was better because it had a lower average waiting time. It gave each process more time to run and caused fewer switches.
 2. What would happen if the time quantum was 1ms? Would the system be more or less efficient?
-
+- It would not be efficient. The CPU would spend too much time switching between processes instead of working.
 3. What would happen if the time quantum was 20ms (larger than any process burst time)? How would Round Robin behave
    then?
-
+- It would act like First Come First Serve (FCFS). Each process would finish before the next one starts. 
 4. In the simulation with quantum 3, how many context switches occurred? Count each time a process was removed from the
    queue.
-
+- There would be 6 context switches.
 5. Why does Round Robin prevent the convoy effect that occurs in FCFS scheduling?
+- Because every process gets a fair turn. Long jobs can’t block short ones from running.
 
 #### What You're Really Learning
 
